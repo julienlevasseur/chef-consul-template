@@ -26,7 +26,6 @@ end
 libarchive_file ConsulTemplateHelpers.install_file(node) do
   path download_path
   extract_to install_path
-  mode "0755"
   not_if { File.exist? install_path }
   action :extract
 end
