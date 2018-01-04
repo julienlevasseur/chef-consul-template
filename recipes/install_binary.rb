@@ -33,5 +33,4 @@ end
 
 link "#{node['consul_template']['install_dir']}/consul-template" do
   to "#{install_path}/consul-template"
-  mode "0755"
 end
